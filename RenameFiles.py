@@ -8,6 +8,8 @@ class fileNamer():
     dir = input("Enter file directory: ")
     old_text = input("Enter old text of file to replace: ")
     new_text = input("Enter new text to replace old text with: ")
+
+    #Check if start_num is valid input
     while True:
         try:
             start_num = int(input("Enter file number to start: "))
@@ -29,7 +31,6 @@ class fileNamer():
             print("None of the detected files start with ",old_text,"\nPlease Try again")
             old_text = input("Enter old text of file to replace: ")
 
-    #Check if start_num is valid
 
 
     #Print files in directory
